@@ -1,0 +1,834 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.search{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 85px;
+    background-color: white;
+    display: none;
+    z-index: 1;
+}
+
+.on{
+    display: block;
+}
+
+.off{
+    display: none;
+}
+
+.navbox1{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    display: none;
+}
+
+.nb1 li{
+    font-size: 14px;
+    line-height: 35px;
+    opacity: 0.7;
+}
+
+.nb1 li:hover{
+    opacity: 1;
+}
+
+.nb2{
+    /* height: 100%; */
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.nb2 img{
+    transition-duration: 3s;
+}
+
+.nb2 img:hover{
+    transform: scale(1.1);
+}
+
+.navbox2{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    display: none;
+}
+
+.background{
+    background-color: #243644;
+    transition-duration: 0.5s;
+}
+
+.block{
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    display: none;  
+}
+
+
+#icon1{
+    font-size: 25px;
+    color: white;
+    display: none;
+    margin-left: 3%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+#slide1{
+    height: 100vh;
+    background-image: url(Image/Desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide2{
+    height: 100vh;
+    background-image: url(Image/WhatsApp_Image_2024-02-21_at_1.36.33_PM.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide3{
+    height: 100vh;
+    background-image: url(Image/About_the_product_-_970x600px_1800_x_800px_-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide4{
+    height: 100vh;
+    background-image: url(Image/Yellow_Professional_Gradient_App_Development_Banner_Landscape_1800_x_800px.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide5{
+    height: 100vh;
+    background-image: url(Image/About_the_product_-_970x600px_1800_x_800px_-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide6{
+    height: 100vh;
+    background-image: url(Image/Black_Brown_Luxury_Big_Sale_Medium_Banner-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    /* border: 1px solid red; */
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 img{
+    height: 50px;
+    margin-left: 15%;
+}
+
+header:hover{
+    background-color: #243644;
+}
+
+.nav2{
+    color: white;
+}
+
+.nav2 a{
+    font-size: 12px;
+    margin-inline: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav2 a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.nav3{
+    color: white;
+}
+
+.nav3 i{
+    font-size: 20px;
+    margin-inline: 5px;
+}
+
+.btn1{
+    height: 50px;
+    width: 130px;
+    background-color: white;
+    color: black;
+    border: 0px;
+    transition-duration: 0.5s;
+    font-size: 14px;
+}
+
+.btn1:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.box2{
+    height: 400px;
+    overflow: hidden;
+}
+
+.box3{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/24.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box3:hover{
+    transform: scale(1.1);
+}
+
+#r1{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.btn2{
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    border: 0px;
+    transition-duration: 0.5s;
+    font-size: 14px;
+}
+
+.btn2:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.box4{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/WISH8665.jpg);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box4:hover{
+    transform: scale(1.1);
+}
+
+.box5{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/isak_banner_2023-8.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box5:hover{
+    transform: scale(1.1);
+}
+
+.box6{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/28_d92765da-fe9b-4933-956e-f35793a2149b.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box6:hover{
+    transform: scale(1.1);
+}
+
+ul {
+    list-style: none;
+}
+
+.tabs {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.tabs li {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c4cfde;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    cursor: pointer;
+}
+
+.tabs li:hover {
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.active {
+    color: black !important;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.contents {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.box {
+    /* border: 1px solid black; */
+    width: 100%;
+    animation: moving 1s ease;
+    -webkit-animation: moving 1s ease;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#li1{
+    font-size: 30px;
+}
+
+.box7{
+    height: 350px;
+    background-image: url(Image/23_60dca5a2-7b89-4371-a62e-534bd189af6d.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box7:hover{
+    background-image: url(Image/21.png);
+}
+
+.box8{
+    height: 350px;
+    background-image: url(Image/WISH2050.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box8:hover{
+    background-image: url(Image/21.png);
+}
+
+.box9{
+    height: 350px;
+    background-image: url(Image/38.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box9:hover{
+    background-image: url(Image/21.png);
+}
+
+.box10{
+    height: 350px;
+    background-image: url(Image/WISH1853.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box10:hover{
+    background-image: url(Image/SummerRain239ml_20231010_17463214.jpg);
+}
+
+.box11{
+    height: 350px;
+    background-image: url(Image/Rain-Kissed-Roses9ml_20231009_15311186.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box11:hover{
+    background-image: url(Image/Rain-Kissed-Rose.jpg);
+}
+
+.box12{
+    height: 350px;
+    background-image: url(Image/Lavender-Rain9ml_Forest-Rain9ml_SummerRain239ml_Lavender-Rain9ml_Forest-Rain9ml_Rain-Kissed-Roses9ml_20231009_144058119.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box12:hover{
+    background-image: url(Image/Lavender-Rain.jpg);
+}
+
+.box13{
+    height: 350px;
+    background-image: url(Image/Forest-Rain9ml_SummerRain239ml_Lavender-Rain9ml_Forest-Rain9ml_Rain-Kissed-Roses9ml_20231009_143441473.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box13:hover{
+    background-image: url(Image/Lavender-Rain.jpg);
+}
+
+#r2{
+    width: 100%;
+    margin-left: 0%;
+}
+
+.btn3{
+    height: 50px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    transition-duration: 0.5s;
+    font-size: 14px;
+}
+
+.btn3:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.box14{
+    height: 350px;
+    background-image: url(Image/23_60dca5a2-7b89-4371-a62e-534bd189af6d.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box14:hover{
+    background-image: url(Image/21.png);
+}
+
+.box15{
+    height: 350px;
+    background-image: url(Image/WISH2050.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box15:hover{
+    background-image: url(Image/21.png);
+}
+
+.box16{
+    height: 350px;
+    background-image: url(Image/38.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box16:hover{
+    background-image: url(Image/21.png);
+}
+
+.box17{
+    height: 350px;
+    background-image: url(Image/WISH1853.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box17:hover{
+    background-image: url(Image/SummerRain239ml_20231010_17463214.jpg);
+}
+
+.box18{
+    height: 350px;
+    background-image: url(Image/Rain-Kissed-Roses9ml_20231009_15311186.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box18:hover{
+    background-image: url(Image/Rain-Kissed-Rose.jpg);
+}
+
+.box19{
+    height: 350px;
+    background-image: url(Image/Lavender-Rain9ml_Forest-Rain9ml_SummerRain239ml_Lavender-Rain9ml_Forest-Rain9ml_Rain-Kissed-Roses9ml_20231009_144058119.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box19:hover{
+    background-image: url(Image/Lavender-Rain.jpg);
+}
+
+.box20{
+    height: 350px;
+    background-image: url(Image/Forest-Rain9ml_SummerRain239ml_Lavender-Rain9ml_Forest-Rain9ml_Rain-Kissed-Roses9ml_20231009_143441473.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box20:hover{
+    background-image: url(Image/Lavender-Rain.jpg);
+}
+
+.box21{
+    height: 350px;
+    background-image: url(Image/Forest-Rain9ml_SummerRain239ml_Lavender-Rain9ml_Forest-Rain9ml_Rain-Kissed-Roses9ml_20231009_143441473.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box21:hover{
+    background-image: url(Image/Lavender-Rain.jpg);
+}
+
+.box22{
+    height: 650px;
+    overflow: hidden;
+}
+
+.box23{
+    height: 650px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Image/2_187678f4-c793-4737-be3e-94c62ec0d02e.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box23:hover{
+    transform: scale(1.1);
+}
+
+.box24 p{
+    font-size: 12px;
+}
+
+.box25{
+    height: 650px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Image/1_e7f3819e-3384-4484-a977-988ac28b37de.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box25:hover{
+    transform: scale(1.1);
+}
+
+.btn4{
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition-duration: 0.5s;
+}
+
+.btn4:hover{
+    background-color: black;
+    color: white
+}
+
+.btn5{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.btn5:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.box28{
+    height: 250px;
+    width: 50%;
+    background-image: url(Image/LoveSong50ml_20231012_173216275.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box28:hover{
+    background-image: url(Image/LoveSongxBox50ml_1.png);
+}
+
+
+.box30{
+    height: 250px;
+    width: 50%;
+    background-image: url(Image/Firefly20240201160948.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box30:hover{
+    background-image: url(Image/LoveSongxBox50ml_1.png);
+}
+
+.box31{
+    height: 250px;
+    width: 50%;
+    background-image: url(Image/23_60dca5a2-7b89-4371-a62e-534bd189af6d.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box31:hover{
+    background-image: url(Image/32_78feee24-5172-4411-9d4f-cce02db4d63d.png);
+}
+
+.box32{
+    height: 250px;
+    width: 50%;
+    background-image: url(Image/Can_be_availed_once_7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box32:hover{
+    background-image: url(Image/32_78feee24-5172-4411-9d4f-cce02db4d63d.png);
+}
+
+.box33{
+    height: 330px;
+    overflow: hidden;
+}
+
+.box34{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/24\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box34:hover{
+    transform: scale(1.1);
+}
+
+.box35{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/isak_banner_2023-9.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box35:hover{
+    transform: scale(1.1);
+}
+.box36{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/32.png);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box36:hover{
+    transform: scale(1.1);
+}
+.box37{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Image/WISH4126.jpg);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 3s;
+}
+
+.box37:hover{
+    transform: scale(1.1);
+}
+
+#li2{
+    font-size: 16px;
+}
+
+.box39{
+    width: 90%;
+}
+
+.box40{
+    width: 100%;
+}
+
+.box40 .img4{
+    height: 120px;
+}
+
+.main14{
+    background-color: #0e2d4d;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: all .25s ease;
+  }
+  .accordian {
+    width: 500px;
+    /* box-shadow: 0 1px 5px rgba(0,0,0,.10); */
+    margin: 5% auto;
+  }
+  
+  .accordian .title {
+    background-color: transparent;
+    /* border: 1px solid #b9b6b6; */
+    padding: 1rem;
+    margin: 0;
+    font-weight: 300;
+    transition: all .25s ease;
+    
+  }
+  
+  .accordian ul li:last-child .title {
+    border-bottom: 0;
+  }
+  
+  .accordian ul ul li a {
+    display: block;
+    background-color: #eee;
+    padding: 1rem;
+    color: #777;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+  }
+  
+  .accordian ul ul {
+    display: none;
+  }
+  
+  .open {
+    transform: rotate(45deg);
+    transition: all .25s ease;
+  }
+  
+  .accordian ul ul li:last-child a {
+    border-bottom: 0;
+  }
+  
+  .fa {
+    transition: all .25s ease;
+    float: right;
+  }
+  
+  .accordian h3 {
+    cursor: pointer;
+  }
+
+  footer{
+    background-color: white;
+  }
+
+.ft1 li{
+    font-size: 14px;
+    line-height: 30px;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.ft1 li:hover{
+    opacity: 1;
+}
+
+#input1{
+    height: 45px;
+    width: 100%;
+    text-indent: 10px;
+}
+
+#coli i{
+    transition-duration: 1s;
+}
+
+#coli:hover i{
+    transform: rotateY(360deg);
+}

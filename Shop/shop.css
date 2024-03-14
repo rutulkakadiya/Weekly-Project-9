@@ -1,0 +1,911 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.search{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 85px;
+    background-color: white;
+    display: none;
+}
+
+.on{
+    display: block;
+}
+
+.off{
+    display: none;
+}
+
+.navbox1 {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    display: none;
+}
+
+.nb1 li {
+    font-size: 14px;
+    line-height: 35px;
+    opacity: 0.7;
+    list-style: none;
+}
+
+.nb1 li:hover {
+    opacity: 1;
+}
+
+.nb2 {
+    /* height: 100%; */
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.nb2 img {
+    transition-duration: 3s;
+}
+
+.nb2 img:hover {
+    transform: scale(1.1);
+}
+
+.navbox2 {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    display: none;
+}
+
+.background {
+    background-color: #243644;
+    transition-duration: 0.5s;
+}
+
+.block {
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    display: none;
+}
+
+/* .on{
+    display: block;
+}
+
+.off{
+    display: none;
+} */
+
+#icon1 {
+    font-size: 25px;
+    color: white;
+    display: none;
+    margin-left: 3%;
+}
+
+.main1 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Image/14.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    /* border: 1px solid red; */
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 img {
+    height: 50px;
+    margin-left: 15%;
+}
+
+header:hover {
+    background-color: #243644;
+}
+
+.nav2 {
+    color: white;
+}
+
+.nav2 a {
+    font-size: 12px;
+    margin-inline: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav2 a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.nav3 {
+    color: white;
+}
+
+.nav3 i {
+    font-size: 20px;
+    margin-inline: 5px;
+}
+
+.btn1 {
+    height: 50px;
+    width: 130px;
+    background-color: white;
+    color: black;
+    border: 0px;
+    transition-duration: 0.5s;
+    font-size: 14px;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.accordian {
+    width: 500px;
+    /* box-shadow: 0 1px 5px rgba(0,0,0,.10); */
+    margin: 5% auto;
+}
+
+.accordian .title {
+    background-color: transparent;
+    /* border: 1px solid #b9b6b6; */
+    padding: 1rem;
+    margin: 0;
+    font-weight: 300;
+    transition: all .25s ease;
+
+}
+
+.accordian ul li:last-child .title {
+    border-bottom: 0;
+}
+
+.accordian ul ul li a {
+    display: block;
+    background-color: #eee;
+    padding: 1rem;
+    color: #777;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.accordian ul ul {
+    display: none;
+}
+
+.open {
+    transform: rotate(45deg);
+    transition: all .25s ease;
+}
+
+.accordian ul ul li:last-child a {
+    border-bottom: 0;
+}
+
+.fa {
+    transition: all .25s ease;
+    float: right;
+}
+
+.accordian h3 {
+    cursor: pointer;
+}
+
+.sort {
+    /* border: 1px solid black; */
+    border-bottom: 1px solid silver;
+    position: sticky;
+}
+
+#col1 {
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    overflow: scroll;
+}
+
+
+.box1 {
+    height: 200px;
+    /* border: 1px solid black; */
+}
+
+.box2 {
+    height: 100%;
+    background-image: url(Image/pebblely.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box2:hover {
+    background-image: url(Image/1_3.png);
+}
+
+.box3 {
+    height: 100%;
+    background-image: url(Image/Addaheading_4\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box3:hover {
+    background-image: url(Image/DiscoveryPack_1_827638c3-aa54-40cf-9c0a-590f69bdf7d9.jpg);
+}
+
+.box4 {
+    height: 100%;
+    background-image: url(Image/9_cdb54822-e6f0-4a3c-a409-d472617a45c5\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box4:hover {
+    background-image: url(Image/5.jpg);
+}
+
+.box5 {
+    height: 100%;
+    background-image: url(Image/ISAK03015.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box5:hover {
+    background-image: url(Image/1-3.jpg);
+}
+
+.box6 {
+    height: 100%;
+    background-image: url(Image/WISH1853.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box6:hover {
+    background-image: url(Image/SummerRain239ml_20231010_17463214.jpg);
+}
+
+.box7 {
+    height: 100%;
+    background-image: url(Image/pebblely_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box7:hover {
+    background-image: url(Image/2_2.png);
+}
+
+.box8 {
+    height: 100%;
+    background-image: url(Image/pebblely_6_845511ec-97a2-4447-afe9-ee42c9cfabbd.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box8:hover {
+    background-image: url(Image/1_2_65e4faf2-d52f-40d8-bf05-4ca0352f3f38.jpg);
+}
+
+.box9 {
+    height: 100%;
+    background-image: url(Image/pebblely_2_00406ae0-724d-415d-bf0b-cfc1312690e8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box9:hover {
+    background-image: url(Image/31_7c1d07a9-e733-4a8b-a214-8d40760b8aa9.png);
+}
+
+.box10 {
+    height: 100%;
+    background-image: url(Image/3_161bc565-92e4-4c1d-a686-5cbb2227eaf7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box10:hover {
+    background-image: url(Image/11_2133ad45-00db-4c2a-8cb2-bcd4218e1e7c.png);
+}
+
+.box11 {
+    height: 100%;
+    background-image: url(Image/26_615a513a-4c7d-4f04-99da-977d0b86c357.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box11:hover {
+    background-image: url(Image/Above_BeyondxBox50ml.png);
+}
+
+.box12 {
+    height: 100%;
+    background-image: url(Image/pebblely_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box12:hover {
+    background-image: url(Image/12_cb479f23-79d5-4711-a834-9fb1e90b98b3.png);
+}
+
+.box13 {
+    height: 100%;
+    background-image: url(Image/38_9e732c51-1ce8-4267-88c9-57f94598a7a4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box13:hover {
+    background-image: url(Image/37_c631ba0a-7918-4915-8974-7f42a894adf5.png);
+}
+
+.box14 {
+    height: 100%;
+    background-image: url(Image/pebblely_4_3919f85e-f751-4ff5-abdc-60d6e8cfda38.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box14:hover {
+    background-image: url(Image/1_1.png);
+}
+
+.box15 {
+    height: 100%;
+    background-image: url(Image/Firefly20240201160948.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box15:hover {
+    background-image: url(Image/EdgeofDreamsxBox50ml.png);
+}
+
+.box16 {
+    height: 100%;
+    background-image: url(Image/3_541d6b22-9e15-45ef-af26-492dfa3f5536.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box16:hover {
+    background-image: url(Image/1_a093dffb-6c6a-4742-a966-5eac3bd666bb.png);
+}
+
+.box17 {
+    height: 100%;
+    background-image: url(Image/RusticIndiansettingwithroyalpalaces.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box17:hover {
+    background-image: url(Image/US-2.png);
+}
+
+.box18 {
+    height: 100%;
+    background-image: url(Image/31.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box18:hover {
+    background-image: url(Image/32.png);
+}
+
+.box19 {
+    height: 100%;
+    background-image: url(Image/12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box19:hover {
+    background-image: url(Image/Forest-Rain.jpg);
+}
+
+.box20 {
+    height: 100%;
+    background-image: url(Image/Firefly20240201154944.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box20:hover {
+    background-image: url(Image/CosmicDancexBox50ml.png);
+}
+
+.box21 {
+    height: 100%;
+    background-image: url(Image/Firefly20240201152451.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box21:hover {
+    background-image: url(Image/Bloominga.m.xBox50ml.png);
+}
+
+.box22 {
+    height: 100%;
+    background-image: url(Image/Firefly20240201160948.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box22:hover {
+    background-image: url(Image/TopoftheWorldxBox50ml.png);
+}
+
+.box23 {
+    height: 100%;
+    background-image: url(Image/DewofLife50ml_20231018_134541650.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box23:hover {
+    background-image: url(Image/TopoftheWorldxBox50ml.png);
+}
+
+.box24 {
+    height: 100%;
+    background-image: url(Image/Addaheading_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box24:hover {
+    background-image: url(Image/17_4c41d323-84f1-4f89-8055-d24c1591db07.png);
+}
+
+.box25 {
+    height: 100%;
+    background-image: url(Image/LoveSong50ml_20231012_173216275.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box25:hover {
+    background-image: url(Image/LoveSongxBox50ml_1.png);
+}
+
+
+
+.box26 {
+    height: 100%;
+    background-image: url(Image/TopoftheWorld50ml_20231012_15334365.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box26:hover {
+    background-image: url(Image/LoveSongxBox50ml_1.png);
+}
+
+.box27 {
+    height: 100%;
+    background-image: url(Image/13_d1cf32b9-f3d0-48d2-9456-6d416d56e20b.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box27:hover {
+    background-image: url(Image/Forest-Rain.jpg);
+}
+
+.box28 {
+    height: 100%;
+    background-image: url(Image/Addaheading_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box28:hover {
+    background-image: url(Image/19.png);
+}
+
+.box29 {
+    height: 100%;
+    background-image: url(Image/23_60dca5a2-7b89-4371-a62e-534bd189af6d.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box29:hover {
+    background-image: url(Image/21.png);
+}
+
+
+.box30 {
+    height: 100%;
+    background-image: url(Image/2_7d669b9c-00e3-4183-bf9b-a23ad5d7d742.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box30:hover {
+    background-image: url(Image/1_b5147046-1bc2-4563-a2d3-bbc3e7c3b595.png);
+}
+
+.box31 {
+    height: 100%;
+    background-image: url(Image/Addaheading_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box31:hover {
+    background-image: url(Image/16.png);
+}
+
+.box32 {
+    height: 100%;
+    background-image: url(Image/Rain-Kissed-Roses9ml_20231009_15311186.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box32:hover {
+    background-image: url(Image/Rain-Kissed-Rose.jpg);
+}
+
+.box33 {
+    height: 100%;
+    background-image: url(Image/150.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box33:hover {
+    background-image: url(Image/Lavender-Rain.jpg);
+}
+
+.box34 {
+    height: 100%;
+    background-image: url(Image/14_79788049-1def-4244-8d57-a5cc9dc40f6d.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box34:hover {
+    background-image: url(Image/ForestRain-2.png);
+}
+
+.box35 {
+    height: 100%;
+    background-image: url(Image/2_6ab1b333-be74-44d4-850e-d8add7523c91.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box35:hover {
+    background-image: url(Image/GiftPackDiscovery.jpg);
+}
+
+.box36 {
+    height: 100%;
+    background-image: url(Image/pebblely_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box36:hover {
+    background-image: url(Image/LavenderRain.png);
+}
+
+.box37 {
+    height: 100%;
+    background-image: url(Image/WISH4101_bead1ebc-c15a-4f88-bf8c-01961a170a4f.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box37:hover {
+    background-image: url(Image/6_55371488-27fb-4b52-beb8-c0c458f2e9b3.png);
+}
+
+.box38 {
+    height: 100%;
+    background-image: url(Image/pebblely_7_b59e91fa-65b4-415c-90dc-b6761e96e148.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box38:hover {
+    background-image: url(Image/crimsonoudh_1.jpg);
+}
+
+.box39 {
+    height: 100%;
+    background-image: url(Image/19_ccf44047-7b2f-454c-8d9d-eb622f56b03b.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box39:hover {
+    background-image: url(Image/17_ca7072ac-7e23-4802-8353-cf7843f42784.png);
+}
+
+.box40 {
+    height: 100%;
+    background-image: url(Image/WISH2050.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box40:hover {
+    background-image: url(Image/32_78feee24-5172-4411-9d4f-cce02db4d63d.png);
+}
+
+.box41 {
+    height: 100%;
+    background-image: url(Image/pebblely_9_56fac814-8c32-46dd-9eb7-855fa531ce5f.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box41:hover {
+    background-image: url(Image/6_2dafb975-78f0-470e-a54f-aab8384d65f1.png);
+}
+
+.box42 {
+    height: 100%;
+    background-image: url(Image/11_3105179e-d687-4bb1-afeb-ec3240dbb64d.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box42:hover {
+    background-image: url(Image/RainKissed.png);
+}
+
+.box43 {
+    height: 100%;
+    background-image: url(Image/27_7efe0bf1-267d-408a-9d4f-274b0b3a9916.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box43:hover {
+    background-image: url(Image/24_b03bddf8-d1ed-4881-b2b7-01646edc7d1d.png);
+}
+
+.box44 {
+    height: 100%;
+    background-image: url(Image/20231006_165015838.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box44:hover {
+    background-image: url(Image/1_3_bf906a6e-243a-4f90-98ff-bbe08621b888.jpg);
+}
+
+.box45 {
+    height: 100%;
+    background-image: url(Image/Contentscannotbesoldloose.-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box45:hover {
+    background-image: url(Image/17_cc2997b9-a133-480e-be53-64d9868c4964.png);
+}
+
+
+.box46 {
+    height: 100%;
+    background-image: url(Image/pebblely_7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box46:hover {
+    background-image: url(Image/LavenderRain-2.png);
+}
+
+.box47 {
+    height: 100%;
+    background-image: url(Image/151.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box47:hover {
+    background-image: url(Image/TopoftheWorld.1.jpg);
+}
+
+.box48 {
+    height: 100%;
+    background-image: url(Image/152.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box48:hover {
+    background-image: url(Image/WISH8330_14f249a1-207e-4744-877d-3cc9eb69bb79.jpg);
+}
+
+.box49 {
+    height: 100%;
+    background-image: url(Image/38.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box49:hover {
+    background-image: url(Image/32_78feee24-5172-4411-9d4f-cce02db4d63d.png);
+}
+
+
+
+
+#r5{
+    width: 50%;
+    margin-left: 25%;
+    /* border: 1px solid black; */
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: all .25s ease;
+  }
+  .accordian {
+    width: 500px;
+    /* box-shadow: 0 1px 5px rgba(0,0,0,.10); */
+    margin: 5% auto;
+  }
+  
+  .accordian .title {
+    background-color: transparent;
+    /* border: 1px solid #b9b6b6; */
+    padding: 1rem;
+    margin: 0;
+    font-weight: 300;
+    transition: all .25s ease;
+    
+  }
+  
+  .accordian ul li:last-child .title {
+    border-bottom: 0;
+  }
+  
+  .accordian ul ul li a {
+    display: block;
+    background-color: #eee;
+    padding: 1rem;
+    color: #777;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+  }
+  
+  .accordian ul ul {
+    display: none;
+  }
+  
+  .open {
+    transform: rotate(45deg);
+    transition: all .25s ease;
+  }
+  
+  .accordian ul ul li:last-child a {
+    border-bottom: 0;
+  }
+  
+  .fa {
+    transition: all .25s ease;
+    float: right;
+  }
+  
+  .accordian h3 {
+    cursor: pointer;
+  }
+
+  footer{
+    background-color: white;
+  }
+
+.ft1 li{
+    font-size: 14px;
+    line-height: 30px;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.ft1 li:hover{
+    opacity: 1;
+}
+
+#input1{
+    height: 45px;
+    width: 100%;
+    text-indent: 10px;
+}
+
+.btn3{
+    height: 50px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    transition-duration: 0.5s;
+    font-size: 14px;
+}
+
+.btn3:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+#img1{
+    height: 200px;
+    width: 50%;
+}
+
+#coli i{
+    transition-duration: 1s;
+}
+
+#coli:hover i{
+    transform: rotateY(360deg);
+}
